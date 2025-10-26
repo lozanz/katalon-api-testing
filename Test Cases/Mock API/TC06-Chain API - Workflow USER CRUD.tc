@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06-Chain API - Workflow USER CRUD</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>745154d9-55a2-4efc-b216-17a2fc71e969</testCaseGuid>
+</TestCaseEntity>
