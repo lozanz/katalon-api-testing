@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>C%%Users%Baby Groot%Katalon Studio%katalon-api-testing%katalon-api-testing.prj</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>kat-10576019075603873279.groovy</name>
+			<type>1</type>
+			<location>C:/Users/BABYGR~1/AppData/Local/Temp/Katalon/Web Services/kat-10576019075603873279.groovy</location>
+		</link>
+		<link>
+			<name>kat-14632892616534507922.groovy</name>
+			<type>1</type>
+			<location>C:/Users/BABYGR~1/AppData/Local/Temp/Katalon/Web Services/kat-14632892616534507922.groovy</location>
+		</link>
+		<link>
+			<name>kat-2947824855701238510.groovy</name>
+			<type>1</type>
+			<location>C:/Users/BABYGR~1/AppData/Local/Temp/Katalon/Web Services/kat-2947824855701238510.groovy</location>
+		</link>
+	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1761460835178</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1761460835635</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

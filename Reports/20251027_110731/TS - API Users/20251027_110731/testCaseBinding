@@ -1,0 +1,5 @@
+{"testCaseName":"Test Cases/Mock API/TC01-GET ALL USERS","testCaseId":"Test Cases/Mock API/TC01-GET ALL USERS","iterationVariableName":""}
+{"testCaseName":"Test Cases/Mock API/TC02-POST NEW USER","testCaseId":"Test Cases/Mock API/TC02-POST NEW USER","iterationVariableName":""}
+{"testCaseName":"Test Cases/Mock API/TC03-GET SINGLE USER","testCaseId":"Test Cases/Mock API/TC03-GET SINGLE USER","iterationVariableName":""}
+{"testCaseName":"Test Cases/Mock API/TC04-PATCH USER","testCaseId":"Test Cases/Mock API/TC04-PATCH USER","iterationVariableName":""}
+{"testCaseName":"Test Cases/Mock API/TC05-DELETE USER","testCaseId":"Test Cases/Mock API/TC05-DELETE USER","iterationVariableName":""}

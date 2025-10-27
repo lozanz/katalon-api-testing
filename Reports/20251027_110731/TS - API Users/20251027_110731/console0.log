@@ -1,0 +1,55 @@
+2025-10-27 11:07:44.364 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS - API Users
+2025-10-27 11:07:44.950 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Baby Grooot
+2025-10-27 11:07:44.952 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = katalon-api-testing
+2025-10-27 11:07:44.956 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = belajar - DESKTOP-SPLIHBS
+2025-10-27 11:07:44.960 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 10 64bit
+2025-10-27 11:07:44.963 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.108
+2025-10-27 11:07:44.967 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.1.0
+2025-10-27 11:07:46.886 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-27 11:07:46.886 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Mock API/TC01-GET ALL USERS
+2025-10-27 11:07:48.384 DEBUG testcase.TC01-GET ALL USERS              - 1: response = sendRequest(findTestObject("GET ALL USERS"))
+2025-10-27 11:07:54.379 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110731\TS - API Users\20251027_110731\requests\main\GET-ALL-USERS_0.har
+2025-10-27 11:07:54.624 DEBUG testcase.TC01-GET ALL USERS              - 2: responseTime = response.getElapsedTime()
+2025-10-27 11:07:54.747 DEBUG testcase.TC01-GET ALL USERS              - 3: verifyLessThan(responseTime, 10000)
+2025-10-27 11:07:54.931 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Mock API/TC01-GET ALL USERS
+2025-10-27 11:07:54.969 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-27 11:07:54.971 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Mock API/TC02-POST NEW USER
+2025-10-27 11:07:55.324 DEBUG testcase.TC01-GET ALL USERS              - 1: response = sendRequest(findTestObject("POST NEW USER", ["firstname":"Baby", "lastname":"Groot", "username":"broot", "jobposition":"QAE", "joblevel":"Junior", "salary":7777777, "workduration":2]))
+2025-10-27 11:07:56.042 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110731\TS - API Users\20251027_110731\requests\main\POST-NEW-USER_1.har
+2025-10-27 11:07:56.111 DEBUG testcase.TC01-GET ALL USERS              - 2: userName = getElementPropertyValue(response, "[0].username")
+2025-10-27 11:07:56.337 DEBUG testcase.TC01-GET ALL USERS              - 3: jobPosition = getElementPropertyValue(response, "[0].job_position")
+2025-10-27 11:07:56.418 DEBUG testcase.TC01-GET ALL USERS              - 4: verifyEqual(userName, "broot")
+2025-10-27 11:07:56.445 DEBUG testcase.TC01-GET ALL USERS              - 5: assert jobPosition == "QAE"
+2025-10-27 11:07:56.460 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Mock API/TC02-POST NEW USER
+2025-10-27 11:07:56.475 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-27 11:07:56.475 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Mock API/TC03-GET SINGLE USER
+2025-10-27 11:07:56.712 DEBUG testcase.TC01-GET ALL USERS              - 1: response = sendRequest(findTestObject("GET SINGLE USER"))
+2025-10-27 11:07:57.128 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110731\TS - API Users\20251027_110731\requests\main\GET-SINGLE-USER_2.har
+2025-10-27 11:07:57.156 DEBUG testcase.TC01-GET ALL USERS              - 2: firtsName = getElementPropertyValue(response, "[0].first_name")
+2025-10-27 11:07:57.306 DEBUG testcase.TC01-GET ALL USERS              - 3: lastName = getElementPropertyValue(response, "[0].last_name")
+2025-10-27 11:07:57.455 DEBUG testcase.TC01-GET ALL USERS              - 4: workDuration = getElementPropertyValue(response, "[0].work_duration")
+2025-10-27 11:07:57.612 DEBUG testcase.TC01-GET ALL USERS              - 5: verifyEqual(firtsName, "Baby")
+2025-10-27 11:07:57.630 DEBUG testcase.TC01-GET ALL USERS              - 6: verifyMatch(lastName, "Gro.*", true)
+2025-10-27 11:07:57.719 DEBUG testcase.TC01-GET ALL USERS              - 7: assert workDuration == 2
+2025-10-27 11:07:57.733 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Mock API/TC03-GET SINGLE USER
+2025-10-27 11:07:57.754 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-27 11:07:57.755 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Mock API/TC04-PATCH USER
+2025-10-27 11:07:58.189 DEBUG testcase.TC01-GET ALL USERS              - 1: response = sendRequest(findTestObject("PATCH A USER", ["jobposition":"Senior QA Engineer", "salary":8888888]))
+2025-10-27 11:07:58.801 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110731\TS - API Users\20251027_110731\requests\main\PATCH-A-USER_3.har
+2025-10-27 11:07:58.807 DEBUG testcase.TC01-GET ALL USERS              - 2: userName = getElementPropertyValue(response, "[0].username")
+2025-10-27 11:07:58.926 DEBUG testcase.TC01-GET ALL USERS              - 3: jobPosition = getElementPropertyValue(response, "[0].job_position")
+2025-10-27 11:07:59.010 DEBUG testcase.TC01-GET ALL USERS              - 4: Salary = getElementPropertyValue(response, "[0].salary")
+2025-10-27 11:07:59.093 DEBUG testcase.TC01-GET ALL USERS              - 5: verifyEqual(userName, "broot")
+2025-10-27 11:07:59.105 DEBUG testcase.TC01-GET ALL USERS              - 6: verifyMatch(jobPosition, "Senior QA Engineer", false)
+2025-10-27 11:07:59.118 DEBUG testcase.TC01-GET ALL USERS              - 7: assert Salary == 8888888
+2025-10-27 11:07:59.129 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Mock API/TC04-PATCH USER
+2025-10-27 11:07:59.158 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-27 11:07:59.159 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Mock API/TC05-DELETE USER
+2025-10-27 11:07:59.333 DEBUG testcase.TC01-GET ALL USERS              - 1: response = sendRequest(findTestObject("DELETE USER"))
+2025-10-27 11:07:59.729 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110731\TS - API Users\20251027_110731\requests\main\DELETE-USER_4.har
+2025-10-27 11:07:59.746 DEBUG testcase.TC01-GET ALL USERS              - 2: responseTime = response.getElapsedTime()
+2025-10-27 11:07:59.757 DEBUG testcase.TC01-GET ALL USERS              - 3: verifyLessThan(responseTime, 10000)
+2025-10-27 11:07:59.819 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Mock API/TC05-DELETE USER
+2025-10-27 11:08:00.070 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-10-27 11:08:00.070 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS - API Users
+2025-10-27 11:08:00.070 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

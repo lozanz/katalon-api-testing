@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS - Workflow User CRUD" time="15.666" tests="1" failures="0" errors="0">
+   <testsuite name="TS - Workflow User CRUD" tests="1" failures="0" errors="0" time="15.666" skipped="0" timestamp="2025-10-27T04:09:51.541Z" hostname="belajar - DESKTOP-SPLIHBS" id="Test Suites/TS - Workflow User CRUD">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Baby Groot\\Katalon Studio\\katalon-api-testing\\Reports\\20251027_110940\\TS - Workflow User CRUD\\20251027_110941"/>
+         <property name="logFiles" value="C:\\Users\\Baby Groot\\Katalon Studio\\katalon-api-testing\\Reports\\20251027_110940\\TS - Workflow User CRUD\\20251027_110941\\console0.log, C:\\Users\\Baby Groot\\Katalon Studio\\katalon-api-testing\\Reports\\20251027_110940\\TS - Workflow User CRUD\\20251027_110941\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="Baby Grooot"/>
+         <property name="hostName" value="belajar - DESKTOP-SPLIHBS"/>
+         <property name="hostAddress" value="192.168.0.108"/>
+         <property name="projectName" value="katalon-api-testing"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="10.3.1.0"/>
+      </properties>
+      <testcase name="Test Cases/Mock API/TC06-Chain API - Workflow USER CRUD" time="13.974" classname="Test Cases/Mock API/TC06-Chain API - Workflow USER CRUD" status="PASSED">
+         <system-out><![CDATA[27-10-2025T11:09:53 - [TEST_CASE][PASSED] - Test Cases/Mock API/TC06-Chain API - Workflow USER CRUD: Test Cases/Mock API/TC06-Chain API - Workflow USER CRUD
+
+27-10-2025T11:09:55 - [TEST_STEP][PASSED] - testFirtsName = "Fitri": null
+
+27-10-2025T11:09:55 - [TEST_STEP][PASSED] - testLastName = "Abdillah": null
+
+27-10-2025T11:09:55 - [TEST_STEP][PASSED] - responsePost = sendRequest(findTestObject("POST NEW USER", ["firstname":testFirtsName, "lastname":testLastName, "username":"broot", "jobposition":"QAE", "joblevel":"Junior", "salary":7777777, ... ])): Send request successfully
+
+27-10-2025T11:10:01 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110940\TS - Workflow User CRUD\20251027_110941\requests\main\POST-NEW-USER_0.har
+
+27-10-2025T11:10:01 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:10:01 - [TEST_STEP][PASSED] - userName = getElementPropertyValue(responsePost, "[0].username"): null
+
+27-10-2025T11:10:02 - [TEST_STEP][PASSED] - jobPosition = getElementPropertyValue(responsePost, "[0].job_position"): null
+
+27-10-2025T11:10:02 - [TEST_STEP][PASSED] - verifyEqual(userName, "broot"): Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:10:02 - [MESSAGE][PASSED] - Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:10:02 - [TEST_STEP][PASSED] - assert jobPosition == "QAE": null
+
+27-10-2025T11:10:02 - [TEST_STEP][PASSED] - responseAfterPost = sendRequest(findTestObject("GET SINGLE USER")): Send request successfully
+
+27-10-2025T11:10:03 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110940\TS - Workflow User CRUD\20251027_110941\requests\main\GET-SINGLE-USER_1.har
+
+27-10-2025T11:10:03 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:10:03 - [TEST_STEP][PASSED] - firtsNameAfterPost = getElementPropertyValue(responseAfterPost, "[0].first_name"): null
+
+27-10-2025T11:10:03 - [TEST_STEP][PASSED] - lastNameAfterPost = getElementPropertyValue(responseAfterPost, "[0].last_name"): null
+
+27-10-2025T11:10:03 - [TEST_STEP][PASSED] - workDurationAfterPost = getElementPropertyValue(responseAfterPost, "[0].work_duration"): null
+
+27-10-2025T11:10:04 - [TEST_STEP][PASSED] - verifyEqual(firtsNameAfterPost, testFirtsName): Actual object 'Fitri' and expected object 'Fitri' are equal
+
+27-10-2025T11:10:04 - [MESSAGE][PASSED] - Actual object 'Fitri' and expected object 'Fitri' are equal
+
+27-10-2025T11:10:04 - [TEST_STEP][PASSED] - verifyEqual(lastNameAfterPost, testLastName): Actual object 'Abdillah' and expected object 'Abdillah' are equal
+
+27-10-2025T11:10:04 - [MESSAGE][PASSED] - Actual object 'Abdillah' and expected object 'Abdillah' are equal
+
+27-10-2025T11:10:04 - [TEST_STEP][PASSED] - assert workDurationAfterPost == 2: null
+
+27-10-2025T11:10:04 - [TEST_STEP][PASSED] - responsePatch = sendRequest(findTestObject("PATCH A USER", ["jobposition":"Senior QA Engineer", "salary":8888888])): Send request successfully
+
+27-10-2025T11:10:04 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110940\TS - Workflow User CRUD\20251027_110941\requests\main\PATCH-A-USER_2.har
+
+27-10-2025T11:10:04 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:10:04 - [TEST_STEP][PASSED] - userNamePatch = getElementPropertyValue(responsePatch, "[0].username"): null
+
+27-10-2025T11:10:05 - [TEST_STEP][PASSED] - jobPositionPatch = getElementPropertyValue(responsePatch, "[0].job_position"): null
+
+27-10-2025T11:10:05 - [TEST_STEP][PASSED] - SalaryPatch = getElementPropertyValue(responsePatch, "[0].salary"): null
+
+27-10-2025T11:10:05 - [TEST_STEP][PASSED] - verifyEqual(userNamePatch, "broot"): Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:10:05 - [MESSAGE][PASSED] - Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:10:05 - [TEST_STEP][PASSED] - verifyMatch(jobPositionPatch, "Senior QA Engineer", false): Actual text 'Senior QA Engineer' and expected text 'Senior QA Engineer' are matched 
+
+27-10-2025T11:10:05 - [MESSAGE][PASSED] - Actual text 'Senior QA Engineer' and expected text 'Senior QA Engineer' are matched 
+
+27-10-2025T11:10:05 - [TEST_STEP][PASSED] - assert SalaryPatch == 8888888: null
+
+27-10-2025T11:10:05 - [TEST_STEP][PASSED] - responseAfterPatch = sendRequest(findTestObject("GET SINGLE USER")): Send request successfully
+
+27-10-2025T11:10:05 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110940\TS - Workflow User CRUD\20251027_110941\requests\main\GET-SINGLE-USER_3.har
+
+27-10-2025T11:10:05 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:10:05 - [TEST_STEP][PASSED] - userNameAfterPatch = getElementPropertyValue(responseAfterPatch, "[0].username"): null
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - firtsNameAfterPatch = getElementPropertyValue(responseAfterPatch, "[0].first_name"): null
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - lastNameAfterPatch = getElementPropertyValue(responseAfterPatch, "[0].last_name"): null
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - jobPositionAfterPatch = getElementPropertyValue(responseAfterPatch, "[0].job_position"): null
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - SalaryAfterPatch = getElementPropertyValue(responseAfterPatch, "[0].salary"): null
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - verifyEqual(userNameAfterPatch, "broot"): Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:10:06 - [MESSAGE][PASSED] - Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - verifyEqual(firtsNameAfterPatch, testFirtsName): Actual object 'Fitri' and expected object 'Fitri' are equal
+
+27-10-2025T11:10:06 - [MESSAGE][PASSED] - Actual object 'Fitri' and expected object 'Fitri' are equal
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - verifyEqual(lastNameAfterPatch, testLastName): Actual object 'Abdillah' and expected object 'Abdillah' are equal
+
+27-10-2025T11:10:06 - [MESSAGE][PASSED] - Actual object 'Abdillah' and expected object 'Abdillah' are equal
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - verifyMatch(jobPositionAfterPatch, "Senior QA Engineer", false): Actual text 'Senior QA Engineer' and expected text 'Senior QA Engineer' are matched 
+
+27-10-2025T11:10:06 - [MESSAGE][PASSED] - Actual text 'Senior QA Engineer' and expected text 'Senior QA Engineer' are matched 
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - assert SalaryAfterPatch == 8888888: null
+
+27-10-2025T11:10:06 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("DELETE USER")): Send request successfully
+
+27-10-2025T11:10:07 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_110940\TS - Workflow User CRUD\20251027_110941\requests\main\DELETE-USER_4.har
+
+27-10-2025T11:10:07 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:10:07 - [TEST_STEP][PASSED] - responseTimeDelete = response.getElapsedTime(): null
+
+27-10-2025T11:10:07 - [TEST_STEP][PASSED] - verifyLessThan(responseTimeDelete, 10000): Actual number '170' is less than expected number '10.000'
+
+27-10-2025T11:10:07 - [MESSAGE][PASSED] - Actual number '170' is less than expected number '10.000']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[27-10-2025T11:09:51 - [TEST_SUITE][PASSED] - TS - Workflow User CRUD: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

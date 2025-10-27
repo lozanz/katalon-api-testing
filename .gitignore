@@ -2,8 +2,6 @@
 
 bin
 
-Reports
-
 Libs
 
 output
@@ -11,9 +9,6 @@ output
 !output/.gitkeep
 build
 
-.classpath
-
-.project
 
 .cache
 /bin/

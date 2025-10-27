@@ -1,0 +1,39 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS - Workflow User CRUD,,,,27-10-2025 11:09:51,27-10-2025 11:10:07,"15,810s",PASSED
+,,,,,,,
+Test Cases/Mock API/TC06-Chain API - Workflow USER CRUD,,,,27-10-2025 11:09:53,27-10-2025 11:10:07,"13,974s",PASSED
+"testFirtsName = ""Fitri""",,,,27-10-2025 11:09:55,27-10-2025 11:09:55,"0,035s",PASSED
+"testLastName = ""Abdillah""",,,,27-10-2025 11:09:55,27-10-2025 11:09:55,"0,014s",PASSED
+"responsePost = sendRequest(findTestObject(""POST NEW USER"", [""firstname"":testFirtsName, ""lastname"":testLastName, ""username"":""broot"", ""jobposition"":""QAE"", ""joblevel"":""Junior"", ""salary"":7777777, ... ]))",,,,27-10-2025 11:09:55,27-10-2025 11:10:01,"6,849s",PASSED
+"userName = getElementPropertyValue(responsePost, ""[0].username"")",,,,27-10-2025 11:10:01,27-10-2025 11:10:02,"0,391s",PASSED
+"jobPosition = getElementPropertyValue(responsePost, ""[0].job_position"")",,,,27-10-2025 11:10:02,27-10-2025 11:10:02,"0,153s",PASSED
+"verifyEqual(userName, ""broot"")",,,,27-10-2025 11:10:02,27-10-2025 11:10:02,"0,126s",PASSED
+"assert jobPosition == ""QAE""",,,,27-10-2025 11:10:02,27-10-2025 11:10:02,"0,007s",PASSED
+"responseAfterPost = sendRequest(findTestObject(""GET SINGLE USER""))",,,,27-10-2025 11:10:02,27-10-2025 11:10:03,"0,943s",PASSED
+"firtsNameAfterPost = getElementPropertyValue(responseAfterPost, ""[0].first_name"")",,,,27-10-2025 11:10:03,27-10-2025 11:10:03,"0,149s",PASSED
+"lastNameAfterPost = getElementPropertyValue(responseAfterPost, ""[0].last_name"")",,,,27-10-2025 11:10:03,27-10-2025 11:10:03,"0,114s",PASSED
+"workDurationAfterPost = getElementPropertyValue(responseAfterPost, ""[0].work_duration"")",,,,27-10-2025 11:10:03,27-10-2025 11:10:04,"0,221s",PASSED
+"verifyEqual(firtsNameAfterPost, testFirtsName)",,,,27-10-2025 11:10:04,27-10-2025 11:10:04,"0,064s",PASSED
+"verifyEqual(lastNameAfterPost, testLastName)",,,,27-10-2025 11:10:04,27-10-2025 11:10:04,"0,041s",PASSED
+assert workDurationAfterPost == 2,,,,27-10-2025 11:10:04,27-10-2025 11:10:04,"0,014s",PASSED
+"responsePatch = sendRequest(findTestObject(""PATCH A USER"", [""jobposition"":""Senior QA Engineer"", ""salary"":8888888]))",,,,27-10-2025 11:10:04,27-10-2025 11:10:04,"0,833s",PASSED
+"userNamePatch = getElementPropertyValue(responsePatch, ""[0].username"")",,,,27-10-2025 11:10:04,27-10-2025 11:10:05,"0,085s",PASSED
+"jobPositionPatch = getElementPropertyValue(responsePatch, ""[0].job_position"")",,,,27-10-2025 11:10:05,27-10-2025 11:10:05,"0,084s",PASSED
+"SalaryPatch = getElementPropertyValue(responsePatch, ""[0].salary"")",,,,27-10-2025 11:10:05,27-10-2025 11:10:05,"0,077s",PASSED
+"verifyEqual(userNamePatch, ""broot"")",,,,27-10-2025 11:10:05,27-10-2025 11:10:05,"0,027s",PASSED
+"verifyMatch(jobPositionPatch, ""Senior QA Engineer"", false)",,,,27-10-2025 11:10:05,27-10-2025 11:10:05,"0,053s",PASSED
+assert SalaryPatch == 8888888,,,,27-10-2025 11:10:05,27-10-2025 11:10:05,"0,008s",PASSED
+"responseAfterPatch = sendRequest(findTestObject(""GET SINGLE USER""))",,,,27-10-2025 11:10:05,27-10-2025 11:10:05,"0,653s",PASSED
+"userNameAfterPatch = getElementPropertyValue(responseAfterPatch, ""[0].username"")",,,,27-10-2025 11:10:05,27-10-2025 11:10:06,"0,101s",PASSED
+"firtsNameAfterPatch = getElementPropertyValue(responseAfterPatch, ""[0].first_name"")",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,098s",PASSED
+"lastNameAfterPatch = getElementPropertyValue(responseAfterPatch, ""[0].last_name"")",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,070s",PASSED
+"jobPositionAfterPatch = getElementPropertyValue(responseAfterPatch, ""[0].job_position"")",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,117s",PASSED
+"SalaryAfterPatch = getElementPropertyValue(responseAfterPatch, ""[0].salary"")",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,101s",PASSED
+"verifyEqual(userNameAfterPatch, ""broot"")",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,019s",PASSED
+"verifyEqual(firtsNameAfterPatch, testFirtsName)",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,016s",PASSED
+"verifyEqual(lastNameAfterPatch, testLastName)",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,094s",PASSED
+"verifyMatch(jobPositionAfterPatch, ""Senior QA Engineer"", false)",,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,006s",PASSED
+assert SalaryAfterPatch == 8888888,,,,27-10-2025 11:10:06,27-10-2025 11:10:06,"0,006s",PASSED
+"response = sendRequest(findTestObject(""DELETE USER""))",,,,27-10-2025 11:10:06,27-10-2025 11:10:07,"0,466s",PASSED
+responseTimeDelete = response.getElapsedTime(),,,,27-10-2025 11:10:07,27-10-2025 11:10:07,"0,068s",PASSED
+"verifyLessThan(responseTimeDelete, 10000)",,,,27-10-2025 11:10:07,27-10-2025 11:10:07,"0,052s",PASSED

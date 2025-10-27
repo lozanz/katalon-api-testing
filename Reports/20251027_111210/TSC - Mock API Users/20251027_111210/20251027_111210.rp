@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportCollectionEntity>
+   <description></description>
+   <name>20251027_111210</name>
+   <tag></tag>
+   <displayName>20251027_111210</displayName>
+   <reportItemDescriptions>
+      <ReportItemDescription>
+         <reportLocation>Reports/20251027_111210/TS - API Users/20251027_111211</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Service</groupName>
+            <profileName>env-Dev</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Web Service</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20251027_111210/TS - Workflow User CRUD/20251027_111214</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Service</groupName>
+            <profileName>env-Dev</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Web Service</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+   </reportItemDescriptions>
+   <testSuiteCollectionId>Test Suites/TSC - Mock API Users</testSuiteCollectionId>
+</ReportCollectionEntity>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS - API Users" time="12.377" tests="5" failures="0" errors="0">
+   <testsuite name="TS - API Users" tests="5" failures="0" errors="0" time="12.377" skipped="0" timestamp="2025-10-27T04:12:26.213Z" hostname="belajar - DESKTOP-SPLIHBS" id="Test Suites/TS - API Users">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Baby Groot\\Katalon Studio\\katalon-api-testing\\Reports\\20251027_111210\\TS - API Users\\20251027_111211"/>
+         <property name="logFiles" value="C:\\Users\\Baby Groot\\Katalon Studio\\katalon-api-testing\\Reports\\20251027_111210\\TS - API Users\\20251027_111211\\console0.log, C:\\Users\\Baby Groot\\Katalon Studio\\katalon-api-testing\\Reports\\20251027_111210\\TS - API Users\\20251027_111211\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="Baby Grooot"/>
+         <property name="hostName" value="belajar - DESKTOP-SPLIHBS"/>
+         <property name="hostAddress" value="192.168.0.108"/>
+         <property name="projectName" value="katalon-api-testing"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="10.3.1.0"/>
+      </properties>
+      <testcase name="Test Cases/Mock API/TC01-GET ALL USERS" time="6.137" classname="Test Cases/Mock API/TC01-GET ALL USERS" status="PASSED">
+         <system-out><![CDATA[27-10-2025T11:12:27 - [TEST_CASE][PASSED] - Test Cases/Mock API/TC01-GET ALL USERS: Test Cases/Mock API/TC01-GET ALL USERS
+
+27-10-2025T11:12:29 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET ALL USERS")): Send request successfully
+
+27-10-2025T11:12:33 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_111210\TS - API Users\20251027_111211\requests\main\GET-ALL-USERS_0.har
+
+27-10-2025T11:12:33 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:12:33 - [TEST_STEP][PASSED] - responseTime = response.getElapsedTime(): null
+
+27-10-2025T11:12:33 - [TEST_STEP][PASSED] - verifyLessThan(responseTime, 10000): Actual number '2.666' is less than expected number '10.000'
+
+27-10-2025T11:12:33 - [MESSAGE][PASSED] - Actual number '2.666' is less than expected number '10.000']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Mock API/TC02-POST NEW USER" time="1.437" classname="Test Cases/Mock API/TC02-POST NEW USER" status="PASSED">
+         <system-out><![CDATA[27-10-2025T11:12:33 - [TEST_CASE][PASSED] - Test Cases/Mock API/TC02-POST NEW USER: Test Cases/Mock API/TC02-POST NEW USER
+
+27-10-2025T11:12:34 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST NEW USER", ["firstname":"Baby", "lastname":"Groot", "username":"broot", "jobposition":"QAE", "joblevel":"Junior", "salary":7777777, "workduration":2])): Send request successfully
+
+27-10-2025T11:12:34 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_111210\TS - API Users\20251027_111211\requests\main\POST-NEW-USER_1.har
+
+27-10-2025T11:12:34 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:12:34 - [TEST_STEP][PASSED] - userName = getElementPropertyValue(response, "[0].username"): null
+
+27-10-2025T11:12:35 - [TEST_STEP][PASSED] - jobPosition = getElementPropertyValue(response, "[0].job_position"): null
+
+27-10-2025T11:12:35 - [TEST_STEP][PASSED] - verifyEqual(userName, "broot"): Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:12:35 - [MESSAGE][PASSED] - Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:12:35 - [TEST_STEP][PASSED] - assert jobPosition == "QAE": null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Mock API/TC03-GET SINGLE USER" time="1.148" classname="Test Cases/Mock API/TC03-GET SINGLE USER" status="PASSED">
+         <system-out><![CDATA[27-10-2025T11:12:35 - [TEST_CASE][PASSED] - Test Cases/Mock API/TC03-GET SINGLE USER: Test Cases/Mock API/TC03-GET SINGLE USER
+
+27-10-2025T11:12:35 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET SINGLE USER")): Send request successfully
+
+27-10-2025T11:12:36 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_111210\TS - API Users\20251027_111211\requests\main\GET-SINGLE-USER_2.har
+
+27-10-2025T11:12:36 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:12:36 - [TEST_STEP][PASSED] - firtsName = getElementPropertyValue(response, "[0].first_name"): null
+
+27-10-2025T11:12:36 - [TEST_STEP][PASSED] - lastName = getElementPropertyValue(response, "[0].last_name"): null
+
+27-10-2025T11:12:36 - [TEST_STEP][PASSED] - workDuration = getElementPropertyValue(response, "[0].work_duration"): null
+
+27-10-2025T11:12:36 - [TEST_STEP][PASSED] - verifyEqual(firtsName, "Baby"): Actual object 'Baby' and expected object 'Baby' are equal
+
+27-10-2025T11:12:36 - [MESSAGE][PASSED] - Actual object 'Baby' and expected object 'Baby' are equal
+
+27-10-2025T11:12:36 - [TEST_STEP][PASSED] - verifyMatch(lastName, "Gro.*", true): Actual text 'Groot' and expected text 'Gro.*' are matched  using regular expression
+
+27-10-2025T11:12:36 - [MESSAGE][PASSED] - Actual text 'Groot' and expected text 'Gro.*' are matched  using regular expression
+
+27-10-2025T11:12:36 - [TEST_STEP][PASSED] - assert workDuration == 2: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Mock API/TC04-PATCH USER" time="1.293" classname="Test Cases/Mock API/TC04-PATCH USER" status="PASSED">
+         <system-out><![CDATA[27-10-2025T11:12:36 - [TEST_CASE][PASSED] - Test Cases/Mock API/TC04-PATCH USER: Test Cases/Mock API/TC04-PATCH USER
+
+27-10-2025T11:12:36 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("PATCH A USER", ["jobposition":"Senior QA Engineer", "salary":8888888])): Send request successfully
+
+27-10-2025T11:12:37 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_111210\TS - API Users\20251027_111211\requests\main\PATCH-A-USER_3.har
+
+27-10-2025T11:12:37 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:12:37 - [TEST_STEP][PASSED] - userName = getElementPropertyValue(response, "[0].username"): null
+
+27-10-2025T11:12:37 - [TEST_STEP][PASSED] - jobPosition = getElementPropertyValue(response, "[0].job_position"): null
+
+27-10-2025T11:12:37 - [TEST_STEP][PASSED] - Salary = getElementPropertyValue(response, "[0].salary"): null
+
+27-10-2025T11:12:37 - [TEST_STEP][PASSED] - verifyEqual(userName, "broot"): Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:12:37 - [MESSAGE][PASSED] - Actual object 'broot' and expected object 'broot' are equal
+
+27-10-2025T11:12:37 - [TEST_STEP][PASSED] - verifyMatch(jobPosition, "Senior QA Engineer", false): Actual text 'Senior QA Engineer' and expected text 'Senior QA Engineer' are matched 
+
+27-10-2025T11:12:37 - [MESSAGE][PASSED] - Actual text 'Senior QA Engineer' and expected text 'Senior QA Engineer' are matched 
+
+27-10-2025T11:12:37 - [TEST_STEP][PASSED] - assert Salary == 8888888: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Mock API/TC05-DELETE USER" time="0.718" classname="Test Cases/Mock API/TC05-DELETE USER" status="PASSED">
+         <system-out><![CDATA[27-10-2025T11:12:37 - [TEST_CASE][PASSED] - Test Cases/Mock API/TC05-DELETE USER: Test Cases/Mock API/TC05-DELETE USER
+
+27-10-2025T11:12:38 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("DELETE USER")): Send request successfully
+
+27-10-2025T11:12:38 - [MESSAGE][INFO] - HAR: C:\Users\Baby Groot\Katalon Studio\katalon-api-testing\Reports\20251027_111210\TS - API Users\20251027_111211\requests\main\DELETE-USER_4.har
+
+27-10-2025T11:12:38 - [MESSAGE][PASSED] - Send request successfully
+
+27-10-2025T11:12:38 - [TEST_STEP][PASSED] - responseTime = response.getElapsedTime(): null
+
+27-10-2025T11:12:38 - [TEST_STEP][PASSED] - verifyLessThan(responseTime, 10000): Actual number '150' is less than expected number '10.000'
+
+27-10-2025T11:12:38 - [MESSAGE][PASSED] - Actual number '150' is less than expected number '10.000']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[27-10-2025T11:12:26 - [TEST_SUITE][PASSED] - TS - API Users: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

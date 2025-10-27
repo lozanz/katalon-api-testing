@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ResponseObject
 
 def testFirtsName = 'Fitri'
-def testLastName = 'Cynthia'
+def testLastName = 'Abdillah'
 def responsePost= WS.sendRequest(findTestObject('POST NEW USER', [('firstname') : testFirtsName, ('lastname') : testLastName, ('username') : 'broot', ('jobposition') : 'QAE'
             , ('joblevel') : 'Junior', ('salary') : 7777777, ('workduration') : 2]))
 def userName = WS.getElementPropertyValue(responsePost, '[0].username')

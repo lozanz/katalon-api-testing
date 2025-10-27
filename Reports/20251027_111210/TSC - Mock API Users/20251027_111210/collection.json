@@ -1,0 +1,14 @@
+{
+  "id": "Test Suites/TSC - Mock API Users",
+  "name": "TSC - Mock API Users",
+  "reportFolder": "C:\\Users\\Baby Groot\\Katalon Studio\\katalon-api-testing\\Reports\\20251027_111210\\TSC - Mock API Users\\20251027_111210",
+  "startTime": 1761538336973,
+  "endTime": 1761538382091,
+  "totalPassedTestCases": "6",
+  "totalErrorTestCases": "0",
+  "totalFailedTestCases": "0",
+  "totalTestCases": "6",
+  "totalIncompleteTestCases": "0",
+  "totalSkippedTestCases": "0",
+  "description": ""
+}
